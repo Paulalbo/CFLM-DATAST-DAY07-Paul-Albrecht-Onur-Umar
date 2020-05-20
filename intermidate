@@ -1,0 +1,21 @@
+Seconds to Week/Day/Hour/Minutes/Seconds
+
+INPUT number 
+
+
+// (60*60*24*7) --> seconds per week
+weeks = number / (60*60*24*7)
+number = weeks - roundnumber.(weeks)
+
+days = number * (7)
+number = days - roundnumber.(days)
+
+hours = number * (24)
+number = hours - roundnumber.(hours)
+
+min = number * (60)
+number = min - roundnumber.(min)
+
+sec = number * (60)
+
+output = weeks " Weeks " days " days " hours " hours " min " minutes and " sec " seconds"
